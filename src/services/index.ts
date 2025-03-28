@@ -15,7 +15,7 @@ export const fetchProduct = async (id: number) => {
 	}
 }
 
-export const fetchProducts = async (limit?: number, skip?: number) => {
+export const fetchProducts = async (limit: number = 10, skip: number = 0) => {
 	const url = new URL(`${BASE_API_URL}/products`)
 
 	if (limit) {

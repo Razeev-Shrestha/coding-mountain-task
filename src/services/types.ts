@@ -57,7 +57,7 @@ export type ReturnPolicy =
 export interface Review {
 	rating: number
 	comment: string
-	date: Date
+	date: string
 	reviewerName: string
 	reviewerEmail: string
 }
